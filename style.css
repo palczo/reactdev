@@ -10,7 +10,6 @@
 
 $color-main: #ff5e57;
 $title-color: #000000;
-
 $title-font: "Rokkitt", serif;
 $subtitle-font: "Ubuntu", sans-serif;
 
@@ -121,33 +120,47 @@ $subtitle-font: "Ubuntu", sans-serif;
   font-family: $subtitle-font;
 
   /* Skills */
- .skills {
-background: #FFFFFF;
-}
-
-.ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-
-.ul li {
-position: relative;
-}
-
-.skill-description {
-position: absolute;
-width: 50%;
-height: 100%;
-overflow: hidden;
-}
-
-.skill-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
+  .skills {
+    background: #FFFFFF;
+  }
 
   .skills p {
-font-family: $subtitle-font;
-}
+    font: $subtitle-font;
+  }
+
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ul li {
+    position: relative;
+  }
+
+  .skill-description {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .skill-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skill.right .skill-image {
+    right: 0;
+  }
+
+  .skill.right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+  }
+
+  .skill.left .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: left;
+  }
