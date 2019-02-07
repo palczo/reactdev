@@ -1,153 +1,80 @@
+/* Variables */
+$font-sig: 'Signika', sans-serif;
+$font-inc: 'Inconsolata', monospace;
+/* color: blue */
+$color-one: #0097e6;
+/* color: green */
+$color-two: #33d9b2;
+/* color: red */
+$color-three: #ff5252;
+/* color of text on blue background */
+$blue-bg-txt: #ffffff;
+/* color of the text on white background */
+$white-bg-txt: #2c2c54;
 /* Global */
-*, *::before, *::after {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-* {
+body {
   margin: 0;
-  text-align: center;
-}
-
-$color-main: #ff5e57;
-$title-color: #000000;
-
-$title-font: "Rokkitt", serif;
-$subtitle-font: "Ubuntu", sans-serif;
-
-.body {
-  margin: 0;
-  /* text-align: center; */
+  font-family: $font-inc;
   font-size: 16px;
   line-height: 1.7;
-  font-family: "Ubuntu", sans-serif;
+  font-family: $font-inc;
+  color: $white-bg-txt;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
+  width: 1140px;
   padding: 0 20px;
 }
 
 .section {
-  padding: 108px 0;
+  padding: 96px 0;
+}
+/* Navigation */
+div .container {
+  background-color: #0097e6;
+  padding: 12px 0;
 }
 
-.section-title {
+div .container.navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+div .container.navigation li {
+  display: inline-block;
+  margin: 0 36px 0 0;
   position: relative;
-  font-size: 36px;
-  margin: 0 0 60px 0;
-  font-family: $title-font;
 }
 
-.section-title::after {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: -12px;
-  left: 50%;
-  width: 50px;
-  height: 10px;
-  margin-left: -25px;
-  background: #002637;
+div .container.navigation a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* unvisited link */
+a:link {
+  color: green;
 }
 
-/* Splash */
-.splash {
-  height: 100vh;
-  position: relative;
-  background-image: url("https://i.postimg.cc/SKyJ4Kvh/action-cold-energy-286588.jpg");
-  background-position: center center;
-  background-size: cover;
+/* visited link */
+a:visited {
+  color: green;
 }
 
-.splash-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* mouse over link */
+a:hover {
+  color: red;
 }
 
-.splash i {
-  font-size: 30px;
-  background: #002637;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  color: #E4EEF7;
-  border-radius: 50%;
-}
-
-.page-title {
-  color: $title-color;
-  font-size: 50px;
-  margin: 48px 0 0 0;
-  position: relative;
-  font-family: $title-font;
-}
-
-.page-title::after {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: -24px;
-  left: 50%;
-  width: 100px;
-  height: 10px;
-  margin-left: -50px;
-  background: #002637;
-  font-family: $title-font;
-}
-
-.page-subtitle {
-  color: #8EB3CE;
-  margin: 48px 0 0 0;
-  font-family: $subtitle-font;
-}
-
-/* Intro */
-.intro {
-  background: #93C0D5;
-}
-
-.intro p {
-  width: 70%;
-  margin: 0 auto;
-  padding: 48px 0;
-  font-size: 24px;
-  border: 1px solid #000;
-  border-left: 0;
-  border-right: 0;
-  text-align: center;
-  font-family: $subtitle-font;
-
-  /* Skills */
- .skills {
-background: #FFFFFF;
-}
-
-.ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-
-.ul li {
-position: relative;
-}
-
-.skill-description {
-position: absolute;
-width: 50%;
-height: 100%;
-overflow: hidden;
-}
-
-.skill-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-
-  .skills p {
-font-family: $subtitle-font;
+/* selected link */
+a:active {
+  color: yellow;
 }
