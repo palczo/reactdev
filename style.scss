@@ -1,0 +1,35 @@
+/* Variables */
+
+$font-sig: 'Signika', sans-serif;
+$font-inc: 'Inconsolata', monospace;
+
+/* color: blue */
+$color-one: #0097e6;
+
+/* color: green */
+$color-two: #33d9b2;
+
+/* color: red */
+$color-three: #ff5252;
+
+/* color of text on blue background */
+$blue-bg-txt: #ffffff;
+
+/* color of the text on white background */
+$white-bg-txt: #2c2c54;
+
+/* Global */
+
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+.body {
+  margin: 0;
+  font-family: $font-inc;
+  font-size: 16px;
+  line-height: 1.7;}
+
+.container {
+  width: 1140px;
+  padding: 0 20px 0 20px; 
+}
